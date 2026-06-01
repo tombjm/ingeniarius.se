@@ -39,3 +39,15 @@
 @media (max-width: 860px){
   .audience{ grid-template-columns: 1fr; }
 }
+
+.hero-photo{
+  padding:0;
+  background:#fff;
+}
+.hero-photo img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  filter:saturate(.95) contrast(1.02);
+}
