@@ -42,11 +42,19 @@
   .audience{ grid-template-columns: 1fr; }
 }
 
-/* Hero image */
+/* Hero-panel: bestämd höjd istället för superhög */
 .hero-panel.hero-photo{
-  height: 38vh;
-  min-height: 280px;
-  max-height: 420px;
+  height: 360px;      /* prova 300–420px */
+  min-height: 360px;
+}
+
+/* Bilden ska fylla rutan och beskäras */
+.hero-panel.hero-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 35%;  /* justera: center / center top / 50% 30% */
+  display:block;
 }
 
 .logo{ height:200px; width:auto; display:block; }
