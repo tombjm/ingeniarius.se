@@ -57,4 +57,15 @@
   display:block;
 }
 
-.logo{ height:200px; width:auto; display:block; }
+.logo{
+  height:42px;   /* prova 36–52px */
+  width:auto;
+  display:block;
+  opacity:1;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
