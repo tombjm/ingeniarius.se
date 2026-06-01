@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ingeniarius AB — Arkitektur. Ingenjörskonst. I samverkan.</title>
-  <meta name="description" content="Ingeniarius AB – arkitektur med precision och byggbarhet. Bygglov, system- och bygghandling, samordning och tekniskt stöd." />
+  <title>Ingeniarius AB — Arkitektur som håller i verkligheten</title>
+  <meta name="description" content="Ingeniarius AB – arkitektur med tydlig gestaltning och byggbarhet. Från idé till bygglov och bygghandling, med trygg process och tydliga leveranser." />
   <style>
     :root{
       --bg:#f6f5f3;
@@ -48,12 +48,25 @@
       background:rgba(255,255,255,.85);
       backdrop-filter: blur(8px);
     }
+
     .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+    }
+    .logo{
+      height:22px; /* justera vid behov */
+      width:auto;
+      display:block;
+      opacity:.92;
+    }
+    .brand-text{
       font-family: ui-serif, Georgia, "Times New Roman", serif;
       font-size:18px;
       letter-spacing:.02em;
-      text-decoration:none;
     }
+
     nav a{
       text-decoration:none;
       font-size:13px;
@@ -66,9 +79,7 @@
     .nav-right{display:flex; align-items:center; gap:10px;}
 
     /* Hero */
-    .hero{
-      padding:54px 22px 24px;
-    }
+    .hero{ padding:54px 22px 24px; }
     .hero-grid{
       display:grid;
       grid-template-columns: 1.05fr .95fr;
@@ -91,11 +102,17 @@
       font-size:44px;
     }
     .lead{
-      margin:0 0 18px;
+      margin:0 0 12px;
       color:var(--muted);
       font-size:15px;
       line-height:1.6;
-      max-width:54ch;
+      max-width:62ch;
+    }
+    .proof{
+      margin:0 0 18px;
+      color:rgba(20,20,20,.55);
+      font-size:12.5px;
+      letter-spacing:.03em;
     }
     .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:10px;}
     .btn{
@@ -112,11 +129,7 @@
       background:#fff;
     }
     .btn:hover{border-color:rgba(20,20,20,.35);}
-    .btn.primary{
-      background:var(--ink);
-      color:#fff;
-      border-color:var(--ink);
-    }
+    .btn.primary{ background:var(--ink); color:#fff; border-color:var(--ink); }
     .btn.primary:hover{opacity:.92;}
 
     /* Right hero panel (skiss-plats) */
@@ -148,11 +161,7 @@
       text-align:center;
       line-height:1.5;
     }
-    .hero-panel svg{
-      width:100%;
-      height:100%;
-      opacity:.55;
-    }
+    .hero-panel svg{ width:100%; height:100%; opacity:.55; }
 
     /* Audience cards */
     .audience{
@@ -173,10 +182,7 @@
       transition: transform .15s ease, border-color .15s ease;
       min-height:92px;
     }
-    .audience-card:hover{
-      transform: translateY(-2px);
-      border-color: rgba(20,20,20,.30);
-    }
+    .audience-card:hover{ transform: translateY(-2px); border-color: rgba(20,20,20,.30); }
     .audience-label{
       display:block;
       font-family: ui-serif, Georgia, "Times New Roman", serif;
@@ -191,10 +197,7 @@
     }
 
     /* Sections */
-    section{
-      padding:52px 22px;
-      border-top:1px solid var(--line);
-    }
+    section{ padding:52px 22px; border-top:1px solid var(--line); }
     section h2{
       margin:0 0 10px;
       font-family: ui-serif, Georgia, "Times New Roman", serif;
@@ -206,7 +209,7 @@
       margin:0 0 18px;
       color:var(--muted);
       line-height:1.65;
-      max-width:72ch;
+      max-width:76ch;
       font-size:14px;
     }
     .two-col{
@@ -230,12 +233,7 @@
       font-weight:600;
     }
     ul.clean{margin:0; padding-left:18px; color:var(--muted); line-height:1.7; font-size:14px;}
-    .mini{
-      font-size:13px;
-      color:var(--muted);
-      line-height:1.55;
-      margin:0;
-    }
+    .mini{ font-size:13px; color:var(--muted); line-height:1.55; margin:0; }
 
     /* Process */
     .process{
@@ -270,10 +268,7 @@
     }
 
     /* Footer/contact */
-    footer{
-      padding:40px 22px 46px;
-      border-top:1px solid var(--line);
-    }
+    footer{ padding:40px 22px 46px; border-top:1px solid var(--line); }
     .contact-grid{
       display:grid;
       grid-template-columns: 1.2fr .8fr;
@@ -314,14 +309,14 @@
 
       <header>
         <a class="brand" href="#top" aria-label="Ingeniarius AB">
-         <img class="logo" src="assets/img/ING.png" alt="Ingeniarius AB">
+          <img class="logo" src="assets/img/ing.png" alt="Ingeniarius AB">
           <span class="brand-text">Ingeniarius AB</span>
         </a>
         <div class="nav-right">
           <nav aria-label="Huvudmeny">
-            <a href="#privat">Privat</a>
-            <a href="#brf">BRF</a>
-            <a href="#foretag">Företag</a>
+            <a href="#villa">Villa &amp; bostad</a>
+            <a href="#brf">BRF &amp; förvaltning</a>
+            <a href="#projekt">Projekt &amp; utveckling</a>
             <a href="#om">Om</a>
             <a href="#kontakt">Kontakt</a>
           </nav>
@@ -331,63 +326,88 @@
       <main id="top" class="hero">
         <div class="hero-grid">
           <div>
-            <p class="kicker">Arkitektur • byggbarhet • precision</p>
-            <h1>Arkitektur. Ingenjörskonst.<br>I samverkan.</h1>
+            <p class="kicker">Arkitektur • gestaltning • byggbarhet</p>
+            <h1>Arkitektur som håller i verkligheten.</h1>
             <p class="lead">
-              Vi utformar byggnader och miljöer med tydlig gestaltning, hållbara materialval
-              och genomförbarhet i fokus — från bygglov till bygghandling.
+              Vi hjälper privatpersoner, BRF:er och företag att ta projekt från idé till bygglov och bygghandling —
+              med tydlig gestaltning och hög byggbarhet. Du får en trygg process, tydliga beslut och ett resultat
+              som fungerar i vardagen.
             </p>
+            <p class="proof">Bygglov • System/bygghandling • Samordning • Stöd i byggskede vid behov</p>
 
             <div class="cta-row">
               <a class="btn primary" href="#kontakt">Boka ett möte</a>
-              <a class="btn" href="#om">Läs om arbetssätt</a>
+              <a class="btn" href="mailto:kontakt@ingeniarius.se?subject=Förfrågan%20Ingeniarius%20AB">Skicka underlag</a>
             </div>
 
             <div class="audience" aria-label="Välj spår">
-              <a class="audience-card" href="#privat">
-                <span class="audience-label">Privatkund</span>
-                <span class="audience-desc">Bygglov, ombyggnad och tillbyggnad – tydliga handlingar och trygg process.</span>
+              <a class="audience-card" href="#villa">
+                <span class="audience-label">Villa &amp; bostad</span>
+                <span class="audience-desc">Bygglov, ombyggnad, tillbyggnad — tydliga handlingar och trygg process.</span>
               </a>
               <a class="audience-card" href="#brf">
-                <span class="audience-label">BRF</span>
-                <span class="audience-desc">Projektering, samordning och stöd i upphandling och genomförande.</span>
+                <span class="audience-label">BRF &amp; förvaltning</span>
+                <span class="audience-desc">Samordning, upphandlingstöd och genomförande med kvalitet.</span>
               </a>
-              <a class="audience-card" href="#foretag">
-                <span class="audience-label">Företag</span>
-                <span class="audience-desc">Arkitektur med teknisk ryggrad – i tidiga skeden eller som produktionsstöd.</span>
+              <a class="audience-card" href="#projekt">
+                <span class="audience-label">Projekt &amp; utveckling</span>
+                <span class="audience-desc">Tidiga skeden till bygghandling — leveranssäker arkitektur.</span>
               </a>
             </div>
           </div>
 
-          <div class="hero-panel hero-photo" aria-label="Projektbild">
-            <img src="assets/img/hero.jpg" alt="Arkitektur – detaljbild" loading="lazy">
+          <div class="hero-panel" aria-label="Illustration">
+            <div class="sketch">
+              <!-- Skiss-placeholder. Byt gärna till hero-bild senare. -->
+              <svg viewBox="0 0 900 520" role="img" aria-label="Arkitektskiss">
+                <defs>
+                  <linearGradient id="g" x1="0" x2="1">
+                    <stop offset="0" stop-color="rgba(0,0,0,.10)"/>
+                    <stop offset="1" stop-color="rgba(0,0,0,.02)"/>
+                  </linearGradient>
+                </defs>
+                <path d="M110 390 L110 250 L260 210 L420 235 L520 190 L705 230 L760 310 L760 390 Z"
+                      fill="rgba(0,0,0,.03)" stroke="rgba(0,0,0,.30)" stroke-width="3"/>
+                <path d="M110 250 L260 210 L260 300 L110 330 Z"
+                      fill="url(#g)" stroke="rgba(0,0,0,.25)" stroke-width="2"/>
+                <path d="M260 210 L420 235 L420 320 L260 300 Z"
+                      fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.22)" stroke-width="2"/>
+                <path d="M420 235 L520 190 L520 295 L420 320 Z"
+                      fill="rgba(0,0,0,.015)" stroke="rgba(0,0,0,.22)" stroke-width="2"/>
+                <path d="M520 190 L705 230 L705 330 L520 295 Z"
+                      fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.22)" stroke-width="2"/>
+                <path d="M705 230 L760 310 L760 390 L705 330 Z"
+                      fill="rgba(0,0,0,.02)" stroke="rgba(0,0,0,.22)" stroke-width="2"/>
+                <line x1="95" y1="390" x2="800" y2="390" stroke="rgba(0,0,0,.28)" stroke-width="3"/>
+                <text x="40" y="60" font-family="Georgia,serif" font-size="22" fill="rgba(0,0,0,.38)">
+                  Skiss / referens (byt till projektfoto när du vill)
+                </text>
+              </svg>
+            </div>
           </div>
         </div>
       </main>
 
-      <!-- PRIVAT -->
-      <section id="privat">
-        <h2>Privatkund</h2>
+      <!-- VILLA -->
+      <section id="villa">
+        <h2>Villa &amp; bostad</h2>
         <p class="section-lead">
-          När du bygger om, bygger till eller planerar nytt är det viktigaste att processen blir tydlig,
-          att handlingarna håller och att slutresultatet fungerar i vardagen.
+          För dig som vill komma fram snabbt till en bra lösning, undvika omtag och få handlingar som fungerar i bygglov och produktion.
         </p>
-
         <div class="two-col">
           <div class="box">
             <h3>Vanliga uppdrag</h3>
             <ul class="clean">
-              <li>Förstudie och skiss (planlösning, volym, material)</li>
+              <li>Skiss och förstudie (planlösning, volym, material)</li>
               <li>Bygglovshandlingar</li>
               <li>Systemhandling / bygghandling</li>
-              <li>Samordning av konsulter vid behov</li>
+              <li>Stöd i dialog med kommun och entreprenör</li>
             </ul>
           </div>
           <div class="box">
-            <h3>Leveranser</h3>
+            <h3>Vad du får</h3>
             <p class="mini">
-              Ritningspaket med tydlig avgränsning, kort beskrivning av lösningarna och stöd i dialog med kommun/entreprenör.
-              Vid behov hjälper vi även till i byggskedet med avstämningar och ändringshantering.
+              Ett tydligt ritningspaket med avgränsningar, beslutspunkter och leveranser som minskar risken för missförstånd och sena ändringar.
             </p>
           </div>
         </div>
@@ -395,53 +415,48 @@
 
       <!-- BRF -->
       <section id="brf">
-        <h2>BRF</h2>
+        <h2>BRF &amp; förvaltning</h2>
         <p class="section-lead">
-          För bostadsrättsföreningar handlar bra arkitektur lika mycket om gestaltning som om robusta handlingar,
-          samordning och ett genomförande som håller tid, ekonomi och kvalitet.
+          För föreningar handlar bra arkitektur om helhet, långsiktighet och tydliga underlag för beslut — med smidigt genomförande.
         </p>
-
         <div class="two-col">
           <div class="box">
             <h3>Typiska projekt</h3>
             <ul class="clean">
-              <li>Ombyggnad/omgestaltning av entréer och gemensamma ytor</li>
-              <li>Vind/loft, lokalanpassning, tillbyggnader</li>
-              <li>Tekniska uppgraderingar med arkitektonisk helhet</li>
+              <li>Entréer, gårdar och gemensamma ytor</li>
+              <li>Lokalanpassning, tillbyggnad, vind/loft</li>
               <li>Upphandlingsunderlag och stöd i anbudsutvärdering</li>
+              <li>Samordning och byggbarhetskontroll</li>
             </ul>
           </div>
           <div class="box">
-            <h3>Plus i kanten</h3>
+            <h3>Extra trygghet</h3>
             <p class="mini">
-              Vi kan även bidra med teknisk granskning, byggbarhetskontroll och projekteringsledning när projektet kräver det.
-              Det gör att beslut blir enklare för styrelse och förvaltning — och minskar överraskningar i produktion.
+              Vid behov hjälper vi till med teknisk granskning och stöd i byggskedet. Det minskar överraskningar och ger styrelsen bättre beslutsunderlag.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- FÖRETAG -->
-      <section id="foretag">
-        <h2>Företag</h2>
+      <!-- PROJEKT -->
+      <section id="projekt">
+        <h2>Projekt &amp; utveckling</h2>
         <p class="section-lead">
-          För företag fungerar vi som en arkitektpartner i tidiga skeden, eller som en tekniskt säker leverantör i senare skeden.
-          Fokus är alltid kvalitet i underlag, samordning och genomförbarhet.
+          För företag är vi en arkitektpartner i tidiga skeden eller en leveranssäker producent av system/bygghandling — alltid med fokus på byggbarhet.
         </p>
-
         <div class="two-col">
           <div class="box">
             <h3>Skeden</h3>
             <ul class="clean">
-              <li>Tidiga skeden: koncept, program, volym och kalkylstöd</li>
+              <li>Tidiga skeden: koncept, program, volym</li>
               <li>Projektering: system- och bygghandling</li>
-              <li>Produktion: tekniskt stöd och ändringshantering</li>
+              <li>Produktion: stöd och ändringshantering vid behov</li>
             </ul>
           </div>
           <div class="box">
             <h3>Samarbete</h3>
             <p class="mini">
-              Vi jobbar lätt i befintliga team med beställare, entreprenör och konsulter — och tar ansvar för helheten där det behövs.
+              Vi jobbar enkelt i befintliga team och tar ansvar för helheten när det behövs — utan att göra processen tung.
             </p>
           </div>
         </div>
@@ -451,25 +466,24 @@
       <section id="om">
         <h2>Arbetssätt</h2>
         <p class="section-lead">
-          Vi kombinerar arkitektonisk idé med teknisk precision. Vårt arbetssätt är enkelt: tydliga beslut, tydliga handlingar och
-          ett resultat som fungerar i drift och vardag.
+          Vi kombinerar gestaltning med precision i underlagen. Resultatet blir tydliga handlingar och ett projekt som går att bygga.
         </p>
 
         <div class="process" aria-label="Process">
           <div class="step">
             <div class="n">01</div>
             <p class="t">Analys</p>
-            <p class="d">Plats, program, målbild, förutsättningar och risker.</p>
+            <p class="d">Plats, målbild, ramar och beslutspunkter.</p>
           </div>
           <div class="step">
             <div class="n">02</div>
             <p class="t">Idé</p>
-            <p class="d">Skiss, volym, planlösning och gestaltning med byggbarhet.</p>
+            <p class="d">Skiss, volym och plan — med byggbarhet.</p>
           </div>
           <div class="step">
             <div class="n">03</div>
             <p class="t">Utveckling</p>
-            <p class="d">Systemhandling, samordning och förberedelse för upphandling.</p>
+            <p class="d">Systemhandling, samordning, förberedelse för upphandling.</p>
           </div>
           <div class="step">
             <div class="n">04</div>
@@ -492,15 +506,15 @@
               <span class="muted"><strong>Ort:</strong> Stockholm</span>
             </p>
             <p class="tiny">
-              (Byt gärna mail/telefon till dina riktiga kontaktuppgifter. Mailto-länken fungerar direkt.)
+              (Byt gärna mail/telefon till dina riktiga kontaktuppgifter. Filnamn för logga: assets/img/ing.png)
             </p>
           </div>
 
           <div class="contact-card">
             <h3 style="margin:0 0 10px; font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:rgba(20,20,20,.62);">
-              Snabbt meddelande
+              Nästa steg
             </h3>
-            <p class="mini">Vill du ha ett enkelt formulär? Lägg till Formspree senare. Just nu funkar mailto bäst.</p>
+            <p class="mini">Vill du bifoga underlag? Skicka via e-post så tar vi ett kort möte och sätter en tydlig plan.</p>
             <div class="cta-row" style="margin-top:14px;">
               <a class="btn primary" href="mailto:kontakt@ingeniarius.se?subject=Förfrågan%20Ingeniarius%20AB">Skicka e-post</a>
               <a class="btn" href="#top">Till toppen</a>
