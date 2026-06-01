@@ -43,13 +43,10 @@
 }
 
 /* Hero image */
-.hero-photo{ padding:0; background:#fff; }
-.hero-photo img{
-  width:100%;
-  height:100%;
-  display:block;
-  object-fit:cover;
-  filter:saturate(.95) contrast(1.02);
+.hero-panel.hero-photo{
+  height: 38vh;
+  min-height: 280px;
+  max-height: 420px;
 }
 
 .logo{ height:40px; width:auto; display:block; }
