@@ -51,3 +51,5 @@
   object-fit:cover;
   filter:saturate(.95) contrast(1.02);
 }
+
+.logo{ height:40px; width:auto; display:block; }
