@@ -51,21 +51,17 @@
 /* Bilden ska fylla rutan och beskäras */
 .hero-panel.hero-photo img{
   width:100%;
-  height:100%;
+  height:50%;
   object-fit:cover;
   object-position:center 35%;  /* justera: center / center top / 50% 30% */
   display:block;
 }
 
 .logo{
-  height:42px;   /* prova 36–52px */
+  height:52px;   /* prova 36–52px */
   width:auto;
   display:block;
   opacity:1;
 }
 
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
+.brand{ gap:12px; }
