@@ -4,7 +4,7 @@ De fyra sidorna följer startsidans färger, typsnitt, meny och sidfot. De anvä
 
 ## Projektuppgifter att bekräfta
 
-Projektbeskrivningarna utgår från den befintliga projektsidan. Den beskriver arbetsområden men anger inte person, årtal, beställare eller uppdragssammanhang. Förslaget benämner urvalet **tidigare projekterfarenhet** och tillskriver inte ett visst projekt Tom, Veronica eller ett eget uppdrag för Ingeniarius.
+Projektbeskrivningarna utgår från den befintliga projektsidan. Den beskriver arbetsområden men anger inte person, årtal, beställare eller uppdragssammanhang. Urvalet benämns **tidigare projekterfarenhet**. Inget projekt tillskrivs en namngiven person eller presenteras som ett eget uppdrag för Ingeniarius utan bekräftat underlag.
 
 Bekräfta följande före publicering:
 
