@@ -2,161 +2,106 @@
 <html lang="sv">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projekt & utveckling — Ingeniarius AB</title>
-  <style>
-    body{margin:0;background:#f6f5f3;color:#141414;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 80px}
-    .card{background:#fff;border:1px solid rgba(0,0,0,.14);border-radius:14px;box-shadow:0 18px 55px rgba(0,0,0,.08);overflow:hidden}
-    header{display:flex;justify-content:space-between;align-items:center;padding:14px 22px;border-bottom:1px solid rgba(0,0,0,.14)}
-    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:#141414}
-    .brand img{height:70px;width:auto}
-    nav a{margin-left:14px;text-decoration:none;color:rgba(0,0,0,.68);font-size:13px}
-    main{padding:58px 22px}
-    h1,h2{font-family:Georgia,serif;font-weight:600}
-    h1{font-size:46px;line-height:1.05;margin:0 0 18px}
-    h2{font-size:30px;margin:44px 0 12px}
-    p{font-size:15.5px;line-height:1.7;color:rgba(0,0,0,.70);max-width:74ch}
-    .lead{font-size:17px;color:rgba(0,0,0,.76)}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:22px}
-    .box{border:1px solid rgba(0,0,0,.14);border-radius:12px;padding:18px;background:#fff}
-    .box h3{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(0,0,0,.62);margin:0 0 10px}
-    ul{margin:0;padding-left:18px;color:rgba(0,0,0,.70);line-height:1.7}
-    .cta{margin-top:42px;padding:22px;border:1px solid rgba(0,0,0,.14);border-radius:12px;background:#fafafa}
-    .btn{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:999px;background:#141414;color:#fff;text-decoration:none;font-size:13px}
-    footer{padding:22px;border-top:1px solid rgba(0,0,0,.14);color:rgba(0,0,0,.60);font-size:13px}
-    @media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:38px}header{align-items:flex-start;flex-direction:column;gap:12px}nav a{margin-left:0;margin-right:12px}.brand img{height:56px}}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ef">
+  <title>Projekt &amp; utveckling | Arkitektur och projekteringsledning | Ingeniarius AB</title>
+  <meta name="description" content="Arkitektur, projektering, projekteringsledning och byggbarhetsgranskning för fastighetsägare, företag och projektutvecklare. Kontakta Ingeniarius.">
+  <link rel="canonical" href="https://www.ingeniarius.se/projekt-och-utveckling.html">
+  <link rel="icon" href="assets/img/ING.png" type="image/png">
+  <link rel="stylesheet" href="assets/css/subpages.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="Projekt &amp; utveckling | Arkitektur och projekteringsledning | Ingeniarius AB">
+  <meta property="og:description" content="Arkitektur, projektering, projekteringsledning och byggbarhetsgranskning för fastighetsägare, företag och projektutvecklare. Kontakta Ingeniarius.">
+  <meta property="og:url" content="https://www.ingeniarius.se/projekt-och-utveckling.html">
+  <meta property="og:image" content="https://www.ingeniarius.se/assets/img/ING.png">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "name": "Projekt & utveckling | Arkitektur och projekteringsledning | Ingeniarius AB", "url": "https://www.ingeniarius.se/projekt-och-utveckling.html", "inLanguage": "sv", "description": "Arkitektur, projektering, projekteringsledning och byggbarhetsgranskning för fastighetsägare, företag och projektutvecklare. Kontakta Ingeniarius."}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Start", "item": "https://www.ingeniarius.se/"}, {"@type": "ListItem", "position": 2, "name": "Företag", "item": "https://www.ingeniarius.se/projekt-och-utveckling.html"}]}]}</script>
 </head>
-
-<body>
-  <div class="wrap">
-    <div class="card">
-      <header>
-          <a class="brand" href="index.html" aria-label="Ingeniarius AB">
-            <img class="logo" src="assets/img/ING.png" alt="Ingeniarius AB">
-            <span class="brand-text">Ingeniarius AB</span>
-          </a>
-        
-          <div class="nav-right">
-            <nav aria-label="Huvudmeny">
-              <a href="villa-och-bostad.html">Villa &amp; bostad</a>
-              <a href="brf-och-forvaltning.html">BRF &amp; förvaltning</a>
-              <a href="projekt-och-utveckling.html">Projekt &amp; utveckling</a>
-              <a href="projekt.html">Projekt</a>
-            </nav>
-          </div>
-        </header>
-
-      <main>
-        <p style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:rgba(0,0,0,.55);margin:0 0 12px">
-          Projekt & utveckling
-        </p>
-
-        <h1>Från tidiga idéer till färdiga handlingar.</h1>
-
-        <p class="lead">
-          Ingeniarius AB hjälper fastighetsägare, företag, entreprenörer och projektutvecklare att utveckla byggprojekt
-          från idé och program till projektering, handlingar och genomförbara lösningar.
-        </p>
-
-        <p>
-          I tidiga skeden behöver projektet ofta svar på flera frågor samtidigt: vad går att bygga, vilken volym är rimlig,
-          hur kan funktionen lösas, vilka myndighetsfrågor påverkar projektet och vilka tekniska risker bör hanteras redan
-          innan mer pengar läggs på projektering?
-        </p>
-
-        <p>
-          Vi hjälper till att strukturera dessa frågor och omsätta dem i tydliga underlag. Kombinationen av arkitektonisk
-          förståelse och erfarenhet från projektering och produktion gör att lösningar kan utvecklas med fokus på både
-          gestaltning, funktion, ekonomi och byggbarhet.
-        </p>
-
-        <div class="grid">
-          <div class="box">
-            <h3>Vanliga uppdrag</h3>
-            <ul>
-              <li>Koncept och volymstudier</li>
-              <li>Programarbete</li>
-              <li>Plan- och layoututredningar</li>
-              <li>Systemhandlingar</li>
-              <li>Bygghandlingar</li>
-              <li>Projekteringsledning</li>
-              <li>Byggbarhetsgranskning</li>
-              <li>Stöd i produktion</li>
-            </ul>
-          </div>
-
-          <div class="box">
-            <h3>Vad projektet får</h3>
-            <ul>
-              <li>Tydligare riktning i tidigt skede</li>
-              <li>Bättre beslutsunderlag</li>
-              <li>Samordnade handlingar</li>
-              <li>Arkitektur med praktisk genomförbarhet</li>
-              <li>Identifierade risker innan produktion</li>
-              <li>Stöd i dialog med entreprenör och konsulter</li>
-              <li>Underlag som går att bygga vidare på</li>
-            </ul>
-          </div>
+<body id="top">
+  <a class="skip-link" href="#innehall">Hoppa till innehållet</a>
+  <header class="site-header container">
+    <a class="wordmark" href="index.html" aria-label="Ingeniarius AB – startsida">ingeniarius</a>
+    <nav class="site-nav" aria-label="Huvudmeny">
+      <a href="index.html#tjanster">Tjänster</a>
+      <a href="projekt.html">Projekt</a>
+      <a href="index.html#om-oss">Om oss</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+  <main id="innehall">
+    <div class="container">
+      <nav aria-label="Brödsmulor"><ol class="breadcrumb"><li><a href="index.html">Start</a></li><li><a href="index.html#tjanster">Tjänster</a></li><li aria-current="page">Företag</li></ol></nav>
+      <section class="hero" aria-labelledby="hero-rubrik">
+        <div><p class="eyebrow">Företag · Projekt &amp; utveckling</p><h1 id="hero-rubrik">Arkitektur och tekniskt stöd genom projektets skeden.</h1>
+          <p class="lead">Vi hjälper fastighetsägare, företag och projektutvecklare med tidiga utredningar, samordnade handlingar och stöd inför genomförandet.</p>
+          <div class="hero-actions"><a class="button" href="#kontakt">Berätta om ditt projekt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a><a class="text-link" href="#uppdrag">Se våra tjänster</a></div>
         </div>
-
-        <h2>När är det rätt att ta in oss?</h2>
-
-        <p>
-          Vi passar särskilt bra när projektet behöver utvecklas från en lös idé till ett konkret beslutsunderlag.
-          Det kan vara innan bygglov, inför en upphandling, i samband med en lokalanpassning eller när ett projekt behöver
-          få bättre struktur innan det går vidare till nästa skede.
-        </p>
-
-        <p>
-          Vi kan också gå in i befintliga projekt där organisationen behöver extra stöd med projektering, samordning eller
-          granskning av byggbarhet. Vår roll kan vara liten och avgränsad, eller bredare beroende på projektets behov.
-        </p>
-
-        <h2>Arbetssätt</h2>
-
-        <div class="grid">
-          <div class="box">
-            <h3>1. Ramar och mål</h3>
-            <p>Vi börjar med att förstå affären, platsen, funktionen, tidplanen och de viktigaste riskerna.</p>
-          </div>
-          <div class="box">
-            <h3>2. Koncept och alternativ</h3>
-            <p>Vi prövar lösningar genom volym, plan, flöden, material och tekniska huvudprinciper.</p>
-          </div>
-          <div class="box">
-            <h3>3. Handlingar</h3>
-            <p>Vi utvecklar valt alternativ till program, systemhandling eller bygghandling beroende på skede.</p>
-          </div>
-          <div class="box">
-            <h3>4. Samordning</h3>
-            <p>Vid behov samordnar vi med andra konsulter, entreprenör och beställare för att minska glapp mellan idé och genomförande.</p>
-          </div>
+        <aside class="hero-note" aria-labelledby="nasta-steg-rubrik"><p class="eyebrow">Ditt nästa steg</p><h2 id="nasta-steg-rubrik">Vilket skede behöver stöd?</h2><ul class="note-list"><li><strong>Tidigt skede</strong>Utred plats, volym, funktion och möjliga alternativ.</li><li><strong>Projektering</strong>Utveckla handlingar och samordna projektets frågor.</li><li><strong>Genomförande</strong>Granska byggbarhet och hantera tekniska gränssnitt.</li></ul></aside>
+      </section>
+      <nav class="audience-nav" aria-label="Tjänster för olika kunder"><a href="villa-och-bostad.html">Privatkund</a><a href="brf-och-forvaltning.html">BRF</a><a href="projekt-och-utveckling.html" aria-current="page">Företag</a></nav>
+      <section class="section" id="uppdrag" aria-labelledby="uppdrag-rubrik">
+        <div class="section-heading">
+        <div><p class="eyebrow">Det här hjälper vi dig med</p><h2 id="uppdrag-rubrik">Tre sätt att stärka projektet.</h2></div>
+        <p class="section-intro">Anlita oss för ett avgränsat uppdrag eller ett bredare stöd. Omfattningen formas efter beställarens behov och projektets organisation.</p>
+      </div>
+        <div class="offer-grid"><article class="offer-card"><h3>Arkitektur och utredning</h3><p>Utveckla idéer till beslutsunderlag.</p><ul><li>Koncept och volymstudier</li><li>Program och planlösningar</li><li>Ombyggnad och lokalanpassning</li></ul></article><article class="offer-card"><h3>Projektering och ledning</h3><p>Utveckla och samordna handlingar.</p><ul><li>System- och bygghandlingar</li><li>Projekteringsledning</li><li>Samordning mellan beställare och konsulter</li></ul></article><article class="offer-card"><h3>Byggbarhet och genomförande</h3><p>Pröva lösningarna inför nästa skede.</p><ul><li>Byggbarhetsgranskning</li><li>Tekniskt beställarstöd</li><li>Stöd i produktion</li></ul></article></div>
+      </section>
+      <section class="section" aria-labelledby="leverans-rubrik">
+        <div class="section-heading">
+        <div><p class="eyebrow">Din leverans</p><h2 id="leverans-rubrik">Tydliga leveranser till beställaren.</h2></div>
+        <p class="section-intro">Varje uppdrag behöver ett syfte, en avgränsning och underlag som projektet kan arbeta vidare med.</p>
+      </div>
+        <ul class="deliverables"><li><h3>Alternativ och riktning</h3><p>Koncept, planlösningar eller volymstudier för tidiga beslut.</p></li><li><h3>Handlingar för valt skede</h3><p>Program, systemhandlingar eller bygghandlingar enligt uppdragets omfattning.</p></li><li><h3>Samordnade frågor</h3><p>Struktur för gränssnitt, beslut och dialog mellan berörda parter.</p></li><li><h3>Teknisk granskning</h3><p>Genomgång av byggbarhet och frågor som behöver hanteras inför genomförandet.</p></li></ul>
+      </section>
+      <section class="section" aria-labelledby="process-rubrik">
+        <div class="section-heading">
+        <div><p class="eyebrow">Arbetsprocess</p><h2 id="process-rubrik">Från ramar till nästa skede.</h2></div>
+        <p class="section-intro">Vi stämmer av omfattning och viktiga beslut innan projektet går vidare.</p>
+      </div>
+        <ol class="process"><li><span class="step-number" aria-hidden="true">01</span><h3>Ramar och mål</h3><p>Vi går igenom plats, funktion, tidplan och beställarens prioriteringar.</p></li><li><span class="step-number" aria-hidden="true">02</span><h3>Alternativ</h3><p>Vi prövar koncept, planlösning och tekniska huvudprinciper.</p></li><li><span class="step-number" aria-hidden="true">03</span><h3>Handlingar</h3><p>Vi utvecklar valt alternativ till underlag för aktuellt projektskede.</p></li><li><span class="step-number" aria-hidden="true">04</span><h3>Samordning</h3><p>Vi stödjer dialog och avstämningar med beställare, konsulter och entreprenör.</p></li></ol>
+        <p class="people-note">Tom Björkström, civilingenjör, och Veronica Contreras Eitner, arkitekt SAR/MSA, förenar arkitektur, teknisk förståelse och projektledning. <a href="index.html#om-oss">Läs om oss</a>.</p>
+      </section>
+      <section class="section" aria-labelledby="referenser-rubrik">
+        <div class="section-heading">
+        <div><p class="eyebrow">Tidigare projekterfarenhet</p><h2 id="referenser-rubrik">Erfarenhet genom flera skeden.</h2></div>
+        <p class="section-intro">Tidigare projekterfarenhet från bostäder och samhällsfastigheter, med arbete inom projekteringsledning och genomförande.</p>
+      </div>
+        <div class="reference-grid"><a class="reference-card" href="projekt.html#norrtalje">
+        <div class="project-photo"><img class="photo-norrtalje" src="assets/img/projekt-bostadskvarter-norrtalje.jpg" alt="Träfasader och balkonger i ett bostadskvarter i Norrtälje" width="1500" height="2000" loading="lazy" decoding="async"></div>
+        <div class="reference-copy"><p class="eyebrow">Bostäder · Flerbostadshus</p><h3>Bostadskvarter Norrtälje</h3>
+          <p>Projekteringsledning och produktionsledning.</p><span class="text-link">Läs om projektet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
         </div>
-
-        <h2>Arkitektur med teknisk ryggrad</h2>
-
-        <p>
-          Ett projekt kan se bra ut i ett tidigt skede men ändå bli svårt att bygga om teknik, ekonomi och genomförande inte hanteras
-          i tid. Därför arbetar vi med byggbarhet redan när idéerna utvecklas. Det gör projektet tydligare för beställaren,
-          lättare att samordna och enklare att driva vidare.
-        </p>
-
-        <div class="cta">
-          <h2 style="margin-top:0">Vill du diskutera ett projekt?</h2>
-          <p>
-            Skicka kort information om projektet, skede, fastighet, målbild och eventuellt befintligt underlag.
-            Vi återkommer med förslag på lämpligt nästa steg.
-          </p>
-          <a class="btn" href="mailto:ingeniariusab@gmail.com?subject=Projekt%20och%20utveckling%20-%20förfrågan">Skicka förfrågan</a>
+      </a><a class="reference-card" href="projekt.html#boden">
+        <div class="project-photo"><img class="photo-boden" src="assets/img/projekt-forskola-boden.jpg" alt="Förskolebyggnad med gul och röd fasad och tillhörande lekplats i Boden" width="1225" height="1089" loading="lazy" decoding="async"></div>
+        <div class="reference-copy"><p class="eyebrow">Samhällsfastigheter · Förskola</p><h3>Förskola Boden</h3>
+          <p>Projektledning, projekteringsledning och produktionsstöd.</p><span class="text-link">Läs om projektet <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></span>
         </div>
-      </main>
-
-      <footer>
-        Ingeniarius AB · Stockholm · ingeniariusab@gmail.com · 070-209 49 47
-      </footer>
+      </a></div>
+        <a class="text-link section-link" href="projekt.html">Se alla projekt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+      </section>
+      <section class="section faq" aria-labelledby="faq-rubrik">
+        <div><p class="eyebrow">Inför ditt projekt</p><h2 id="faq-rubrik">Vanliga frågor.</h2></div><div class="faq-list"><details><summary>Kan ni gå in i ett pågående projekt?</summary><p>Ja. Vi kan stödja ett befintligt projekt med projektering, samordning eller byggbarhetsgranskning. Uppdraget avgränsas efter behov.</p></details><details><summary>Kan uppdraget vara en mindre del av projektet?</summary><p>Ja. Det kan exempelvis gälla en utredning, ett ritningspaket eller stöd i en viss fas.</p></details><details><summary>Hur arbetar ni med andra konsulter?</summary><p>Vi utgår från projektets organisation och samordnar berörda frågor med beställare och konsulter. Externa specialister kan kopplas in vid behov.</p></details><details><summary>Vad behöver ni för att lämna ett uppdragsförslag?</summary><p>Beskriv fastighet, skede, mål och önskad leverans. Bifoga befintliga handlingar och ange tidplan samt vilka frågor som behöver lösas.</p></details></div>
+      </section>
     </div>
-  </div>
+    <section id="kontakt" class="contact" aria-labelledby="kontakt-rubrik">
+      <div class="contact-inner container">
+        <div><p class="eyebrow">Ta nästa steg</p><h2 id="kontakt-rubrik">Vilket skede vill du ta vidare?</h2></div>
+        <div class="contact-copy">
+          <p>Berätta om fastigheten, projektets mål, skede och tidplan. Skicka gärna befintliga handlingar. Vi återkommer med förslag på uppdrag och nästa steg.</p>
+          <div class="contact-actions">
+            <a class="button" href="mailto:ingeniariusab@gmail.com?subject=Projekt%20och%20utveckling%20%E2%80%93%20f%C3%B6rfr%C3%A5gan">Berätta om ditt projekt <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></a>
+            <a class="button outline" href="tel:+46702094947">Ring oss</a>
+          </div>
+          <div class="contact-details"><a href="mailto:ingeniariusab@gmail.com">ingeniariusab@gmail.com</a><a href="tel:+46702094947">070-209 49 47</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer container">
+    <div class="footer-brand"><img src="assets/img/ING.png" alt="" width="2194" height="1933" loading="lazy">
+      <div><strong>Ingeniarius AB · Stockholm</strong><p>Arkitektur, byggteknik och projektledning.</p></div>
+    </div>
+    <a class="text-link" href="#top">Till toppen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 20V5m-6 6 6-6 6 6"/></svg></a>
+  </footer>
 </body>
 </html>
